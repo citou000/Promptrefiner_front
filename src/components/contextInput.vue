@@ -62,7 +62,7 @@ ${context.value.trim()}
 
     loading.value = true
     try {
-      const res = await fetch('https://promptrefiner-back.onrender.com/generate', {
+      const res = await fetch('http://localhost:3000/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: finalPrompt.value }),
